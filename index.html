@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Survey Matrimonial Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-style-area">
+        <h1>Application to Check Eligibility for Marriage</h1>
+        <p id="note">Note: Form is to be completed at least 21 days prior</p>
+
+        <form id="form" action="/do-something">
+          <div class="personal-details">
+            <p class="topic" id="personal">Personal Details</p>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="name" id="name-label">Name: </label>
+              </div>
+              <div class="fields">
+                <input
+                  type="text"
+                  id="name"
+                  class="input-fields"
+                  placeholder="Enter name here"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="address" id="address-label">Address: </label>
+              </div>
+              <div class="fields">
+                <input
+                  type="text"
+                  id="address"
+                  class="input-fields"
+                  placeholder="Enter address here"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="email" id="email-label">Email: </label>
+              </div>
+              <div class="fields">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-fields"
+                  placeholder="Enter email here"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="number" id="number-label">Phone Number: </label>
+              </div>
+              <div class="fields">
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  class="input-fields"
+                  placeholder="Enter phone number here"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="iq" id="iq-label">IQ: </label>
+              </div>
+              <div class="fields">
+                <input
+                  type="number"
+                  id="iq"
+                  name="iq"
+                  class="input-fields"
+                  placeholder="Enter IQ here"
+                />
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="gender" id="gender-label">Gender</label>
+              </div>
+              <div class="fields">
+                <ul id="gender" style="list-style: none">
+                  <li class="radio">
+                    <label for="male"
+                      ><input
+                        name="gender-radio"
+                        type="radio"
+                        id="male"
+                        value="1"
+                        class="user-selection"
+                      />Male</label
+                    >
+                  </li>
+                  <li class="radio">
+                    <label for="female"
+                      ><input
+                        name="gender-radio"
+                        type="radio"
+                        id="female"
+                        value="2"
+                        class="user-selection"
+                      />Female</label
+                    >
+                  </li>
+                  <li class="radio">
+                    <label for="transgender"
+                      ><input
+                        name="gender-radio"
+                        type="radio"
+                        id="transgender"
+                        value="3"
+                        class="user-selection"
+                      />Transgender</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="dob" id="dob-label">Date Of Birth</label>
+              </div>
+              <div class="fields">
+                <input type="date" name="dob" id="dob" class="user-selection" />
+              </div>
+            </div>
+          </div>
+
+          <div class="self-info">
+            <p class="topic">Other Information</p>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="info">Check All That Apply</label>
+              </div>
+              <div class="fields">
+                <ul id="info" style="list-style: none">
+                  <li class="radio">
+                    <label for="tattoos">
+                      <input
+                        type="checkbox"
+                        name="tattoos"
+                        id="tattoos"
+                        value="1"
+                        class="user-selection"
+                      />
+                      I have tattoos and/or piercings
+                    </label>
+                  </li>
+                  <li class="radio">
+                    <label for="working">
+                      <input
+                        type="checkbox"
+                        name="working"
+                        id="working"
+                        value="2"
+                        class="user-selection"
+                      />
+                      I have a source to earn
+                    </label>
+                  </li>
+                  <li class="radio">
+                    <label for="salary">
+                      <input
+                        type="checkbox"
+                        name="salary"
+                        id="salary"
+                        value="3"
+                        class="user-selection"
+                      />
+                      My Salary is more than $2000
+                    </label>
+                  </li>
+                  <li class="radio">
+                    <label for="car">
+                      <input
+                        type="checkbox"
+                        name="car"
+                        id="car"
+                        value="4"
+                        class="user-selection"
+                      />
+                      I own a car
+                    </label>
+                  </li>
+
+                  <li class="radio">
+                    <label for="job">
+                      <input
+                        type="checkbox"
+                        name="job"
+                        id="job"
+                        value="5"
+                        class="user-selection"
+                      />
+                      I have a full time job
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="political" id="political-label"
+                  >Political Persuasion:
+                </label>
+              </div>
+              <div class="fields">
+                <select name="political" id="political" class="dropdown">
+                  <option value="left wing">Left Wing</option>
+                  <option value="right Wing">Right Wing</option>
+                  <option value="conservative">Conservative</option>
+                  <option value="nazi">Nazi</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="essay-section">
+            <p class="topic">Essay Section</p>
+
+            <div class="form-rows">
+              <div class="label">
+                <label for="contact-details" id="contact-details-label"
+                  >Please upload contact details for 2 references</label
+                >
+              </div>
+              <div class="fields">
+                <textarea
+                  name="contact-details"
+                  id="contact-details"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter text here"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <p class="label">
+                Upload Police Clearance Certificate, Bank Statement and Medical
+                Certifiates here:
+              </p>
+
+              <div class="fields">
+                <button id="upload">Upload Files</button>
+              </div>
+            </p>
+          </div>
+        </form>
+
+        <button id="send">Send Application</button>
+      </div>
+    </main>
+
+    <footer>matrimonial.com &copy;Copyright</footer>
+  </body>
+</html>
